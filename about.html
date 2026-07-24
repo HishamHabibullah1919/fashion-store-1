@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AURA | Craftsmanship & History</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/about.css">
+</head>
+
+<body>
+
+  <!-- LUXURY HEADER / NAVIGATION -->
+  <header class="sticky-top bg-white border-bottom border-light shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-luxury py-3">
+      <div class="container d-flex align-items-center justify-content-between">
+
+        <!-- Brand Logo -->
+        <a class="navbar-brand font-heading text-uppercase fw-bold fs-2 text-dark tracking-wider me-0 me-lg-5"
+          href="index.html">
+          AURA<span class="gold-text">.</span>
+        </a>
+
+        <!-- Action Icons (Search & Cart) and Mobile Hamburger Toggle -->
+        <div class="d-flex align-items-center gap-3 order-lg-3 ms-auto ms-lg-0">
+
+          <!-- Search Trigger -->
+          <a href="#searchModal" class="nav-icon-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+            aria-label="Search">
+            <i class="bi bi-search"></i>
+          </a>
+
+          <!-- Cart Icon with Badge -->
+          <a href="#" class="nav-icon-link position-relative" aria-label="Shopping Bag">
+            <i class="bi bi-bag"></i>
+            <span class="nav-icon-badge">2</span>
+          </a>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button class="navbar-toggler border-0 p-0 shadow-none ms-2" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarLuxury" aria-controls="navbarLuxury" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="bi bi-list fs-1 text-dark"></i>
+          </button>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse justify-content-center order-lg-2" id="navbarLuxury">
+          <ul class="navbar-nav my-3 my-lg-0 gap-lg-4 text-uppercase">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <!-- Products পেজে থাকার কারণে এখানে 'active gold-text' ব্যবহার করা হয়েছে -->
+              <a class="nav-link" aria-current="page" href="products.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+
+    <!-- Collapsible Quick Search Bar -->
+    <div class="collapse bg-light border-top py-3" id="searchModal">
+      <div class="container">
+        <form class="d-flex align-items-center">
+          <input type="search" class="form-control luxury-input border-0 bg-transparent me-2"
+            placeholder="Search products, collections..." aria-label="Search">
+          <button type="submit" class="btn btn-luxury btn-sm">Search</button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT WRAPPER -->
+  <main>
+
+    <!-- PAGE HEADER -->
+    <section class="py-5 bg-black text-white text-center position-relative">
+      <div class="container py-5">
+        <span class="sub-heading gold-text">Our Heritage</span>
+        <h1 class="display-4 text-uppercase font-heading mb-2">About Us</h1>
+        <p class="text-white-50 max-w-lg mx-auto mb-0" style="max-width: 550px; font-weight: 300;">
+          Pioneering sculptural minimalism and sustainable luxury in modern haute couture.
+        </p>
+      </div>
+    </section>
+
+    <!-- COMPANY STORY -->
+    <section class="py-5 my-4">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <div class="position-relative">
+              <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=1000&auto=format&fit=crop"
+                class="img-fluid w-100 shadow-sm" alt="AURA Atelier Studio">
+              <div
+                class="position-absolute bottom-0 start-0 bg-black text-white p-4 d-none d-sm-block border-start border-4 border-warning"
+                style="max-width: 260px;">
+                <span class="font-heading gold-text h2 d-block mb-0">Est. 2012</span>
+                <small class="text-white-50 text-uppercase" style="font-size: 0.65rem; letter-spacing: 0.15em;">Paris &
+                  Milan</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <span class="sub-heading">Company Story</span>
+            <h2 class="section-title mb-4">The Maison Architecture</h2>
+            <p class="text-muted mb-4 fw-light" style="line-height: 1.8;">
+              Founded with a singular commitment to pure architectural lines, AURA reinvents high fashion through
+              sustainable luxury, hand-selected organic textiles, and traditional European master tailoring.
+            </p>
+            <p class="text-muted mb-0 fw-light" style="line-height: 1.8;">
+              What began as a private atelier in Paris serving exclusive clientele has grown into an international
+              beacon of understated luxury. Every garment passes through the hands of master artisans, ensuring that
+              every seam, cut, and silhouette embodies quiet power and uncompromised sophistication.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MISSION & VISION -->
+    <section class="py-5 bg-light border-top border-bottom">
+      <div class="container py-4">
+        <div class="row g-4">
+          <!-- Mission -->
+          <div class="col-md-6">
+            <div class="p-4 p-md-5 bg-white border-start border-3 border-dark h-100 shadow-sm">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <i class="bi bi-compass fs-2 gold-text"></i>
+                <h3 class="h4 font-heading text-uppercase mb-0">Our Mission</h3>
+              </div>
+              <p class="text-muted mb-0 fw-light" style="line-height: 1.8;">
+                To craft timeless, heirloom-quality garments that empower individuality while driving fashion toward
+                zero-waste sustainability, ethical craftsmanship, and uncompromising material purity.
+              </p>
+            </div>
+          </div>
+
+          <!-- Vision -->
+          <div class="col-md-6">
+            <div class="p-4 p-md-5 bg-white border-start border-3 border-warning h-100 shadow-sm">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <i class="bi bi-eye fs-2 gold-text"></i>
+                <h3 class="h4 font-heading text-uppercase mb-0">Our Vision</h3>
+              </div>
+              <p class="text-muted mb-0 fw-light" style="line-height: 1.8;">
+                To set the benchmark for 21st-century luxury houses by seamlessly blending traditional artisanal
+                heritage with innovative zero-impact textiles and personalized private client experiences.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="py-5 my-4">
+      <div class="container py-3">
+        <div class="text-center mb-5">
+          <span class="sub-heading">Excellence Defined</span>
+          <h2 class="section-title">Why Choose Us</h2>
+        </div>
+
+        <div class="row g-4 text-center">
+          <!-- Fashion Experts -->
+          <div class="col-6 col-lg-3">
+            <div class="p-4 bg-white border h-100 shadow-sm transition-smooth hover-lift">
+              <i class="bi bi-award gold-text display-5 mb-3 d-block"></i>
+              <h3 class="h6 font-heading text-uppercase mb-2">Fashion Experts</h3>
+              <p class="text-muted small mb-0 fw-light">Curated by world-renowned couturiers with decades of haute
+                couture mastery.</p>
+            </div>
+          </div>
+
+          <!-- Quality Materials -->
+          <div class="col-6 col-lg-3">
+            <div class="p-4 bg-white border h-100 shadow-sm transition-smooth hover-lift">
+              <i class="bi bi-gem gold-text display-5 mb-3 d-block"></i>
+              <h3 class="h6 font-heading text-uppercase mb-2">Quality Materials</h3>
+              <p class="text-muted small mb-0 fw-light">100% organic silks, rare cashmere blends, and ethically tanned
+                European leathers.</p>
+            </div>
+          </div>
+
+          <!-- Fast Delivery -->
+          <div class="col-6 col-lg-3">
+            <div class="p-4 bg-white border h-100 shadow-sm transition-smooth hover-lift">
+              <i class="bi bi-truck gold-text display-5 mb-3 d-block"></i>
+              <h3 class="h6 font-heading text-uppercase mb-2">Fast Delivery</h3>
+              <p class="text-muted small mb-0 fw-light">Insured priority global courier shipping straight to your door
+                in under 4 days.</p>
+            </div>
+          </div>
+
+          <!-- Customer Satisfaction -->
+          <div class="col-6 col-lg-3">
+            <div class="p-4 bg-white border h-100 shadow-sm transition-smooth hover-lift">
+              <i class="bi bi-heart-pulse gold-text display-5 mb-3 d-block"></i>
+              <h3 class="h6 font-heading text-uppercase mb-2">Customer Satisfaction</h3>
+              <p class="text-muted small mb-0 fw-light">Dedicated 24/7 private concierge and 30-day effortless home
+                return policy.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATISTICS SECTION -->
+    <section class="py-5 bg-black text-white">
+      <div class="container py-4">
+        <div class="row g-4 text-center">
+          <!-- Happy Customers -->
+          <div class="col-6 col-md-3">
+            <div class="p-2">
+              <span class="font-heading gold-text display-4 fw-bold d-block mb-1">25K+</span>
+              <span class="text-uppercase text-white-50" style="font-size: 0.75rem; letter-spacing: 0.15em;">Happy
+                Customers</span>
+            </div>
+          </div>
+
+          <!-- Products -->
+          <div class="col-6 col-md-3">
+            <div class="p-2">
+              <span class="font-heading gold-text display-4 fw-bold d-block mb-1">1,200+</span>
+              <span class="text-uppercase text-white-50" style="font-size: 0.75rem; letter-spacing: 0.15em;">Exquisite
+                Products</span>
+            </div>
+          </div>
+
+          <!-- Orders -->
+          <div class="col-6 col-md-3">
+            <div class="p-2">
+              <span class="font-heading gold-text display-4 fw-bold d-block mb-1">85K+</span>
+              <span class="text-uppercase text-white-50" style="font-size: 0.75rem; letter-spacing: 0.15em;">Orders
+                Fulfilled</span>
+            </div>
+          </div>
+
+          <!-- Awards -->
+          <div class="col-6 col-md-3">
+            <div class="p-2">
+              <span class="font-heading gold-text display-4 fw-bold d-block mb-1">18</span>
+              <span class="text-uppercase text-white-50" style="font-size: 0.75rem; letter-spacing: 0.15em;">Couture
+                Awards</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM SECTION (4 Team Members) -->
+    <section class="py-5 my-4">
+      <div class="container py-3">
+        <div class="text-center mb-5">
+          <span class="sub-heading">Leadership</span>
+          <h2 class="section-title">Meet The Visionaries</h2>
+        </div>
+
+        <div class="row g-4">
+          <!-- Member 1 -->
+          <div class="col-6 col-lg-3">
+            <div class="card border-0 rounded-0 shadow-sm h-100">
+              <div class="position-relative overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=800&auto=format&fit=crop"
+                  height="300" class="card-img-top rounded-0" alt="Elena Rostova">
+              </div>
+              <div class="card-body text-center p-3">
+                <h3 class="h6 font-heading text-uppercase mb-1">Elena Rostova</h3>
+                <p class="gold-text small text-uppercase mb-2" style="font-size: 0.7rem; letter-spacing: 0.1em;">
+                  Creative Director</p>
+                <p class="text-muted small mb-0 fw-light" style="font-size: 0.75rem;">Former senior designer at Milan
+                  Fashion House with 15 years in haute couture.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Member 2 -->
+          <div class="col-6 col-lg-3">
+            <div class="card border-0 rounded-0 shadow-sm h-100">
+              <div class="position-relative overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop"
+                  height="300" class="card-img-top rounded-0" alt="Julian Vance">
+              </div>
+              <div class="card-body text-center p-3">
+                <h3 class="h6 font-heading text-uppercase mb-1">Julian Vance</h3>
+                <p class="gold-text small text-uppercase mb-2" style="font-size: 0.7rem; letter-spacing: 0.1em;">Master
+                  Tailor</p>
+                <p class="text-muted small mb-0 fw-light" style="font-size: 0.75rem;">Savile Row trained artisan
+                  overseeing structural precision and cut.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Member 3 -->
+          <div class="col-6 col-lg-3">
+            <div class="card border-0 rounded-0 shadow-sm h-100">
+              <div class="position-relative overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop"
+                  height="300" class="card-img-top rounded-0" alt="Sophia Chen">
+              </div>
+              <div class="card-body text-center p-3">
+                <h3 class="h6 font-heading text-uppercase mb-1">Sophia Chen</h3>
+                <p class="gold-text small text-uppercase mb-2" style="font-size: 0.7rem; letter-spacing: 0.1em;">Head of
+                  Sustainability</p>
+                <p class="text-muted small mb-0 fw-light" style="font-size: 0.75rem;">Pioneering eco-textile innovations
+                  and zero-waste garment initiatives.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Member 4 -->
+          <div class="col-6 col-lg-3">
+            <div class="card border-0 rounded-0 shadow-sm h-100">
+              <div class="position-relative overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=800&auto=format&fit=crop"
+                  height="300" class="card-img-top rounded-0" alt="Marcus Sterling">
+              </div>
+              <div class="card-body text-center p-3">
+                <h3 class="h6 font-heading text-uppercase mb-1">Marcus Sterling</h3>
+                <p class="gold-text small text-uppercase mb-2" style="font-size: 0.7rem; letter-spacing: 0.1em;">
+                  Managing Director</p>
+                <p class="text-muted small mb-0 fw-light" style="font-size: 0.75rem;">Directing global operations, brand
+                  strategy, and client relations.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- LUXURY FOOTER -->
+  <footer class="bg-black text-white pt-5 pb-4 border-top border-secondary">
+    <div class="container pt-4">
+      <div class="row g-4 g-lg-5 mb-5">
+
+        <!-- Column 1: About Fashion Store -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <a href="index.html"
+            class="font-heading text-uppercase text-white fw-bold fs-3 text-decoration-none d-inline-block mb-3"
+            style="letter-spacing: 0.1em;">
+            AURA<span class="gold-text">.</span>
+          </a>
+          <p class="text-white-50 small mb-4" style="line-height: 1.8; font-weight: 300;">
+            A luxury maison dedicated to timeless elegance, uncompromising quality, and minimalist sophistication in
+            high fashion.
+          </p>
+          <div class="d-flex align-items-center gap-2">
+            <i class="bi bi-geo-alt gold-text"></i>
+            <span class="text-white-50 small">740 Madison Ave, New York</span>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <h6 class="font-heading text-uppercase gold-text mb-4" style="letter-spacing: 0.15em; font-size: 0.9rem;">
+            Quick Links</h6>
+          <ul class="list-unstyled mb-0 d-flex flex-column gap-2" style="font-size: 0.8rem; letter-spacing: 0.05em;">
+            <li><a href="index.html" class="text-white-50 text-decoration-none hover-gold transition-smooth">Home</a>
+            </li>
+            <li><a href="products.html"
+                class="text-white-50 text-decoration-none hover-gold transition-smooth">Collections</a></li>
+            <li><a href="about.html" class="text-white-50 text-decoration-none hover-gold transition-smooth">The
+                Maison</a></li>
+            <li><a href="contact.html" class="text-white-50 text-decoration-none hover-gold transition-smooth">Contact
+                Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Customer Service -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <h6 class="font-heading text-uppercase gold-text mb-4" style="letter-spacing: 0.15em; font-size: 0.9rem;">
+            Client Care</h6>
+          <ul class="list-unstyled mb-0 d-flex flex-column gap-2" style="font-size: 0.8rem; letter-spacing: 0.05em;">
+            <li><a href="#" class="text-white-50 text-decoration-none hover-gold transition-smooth">Bespoke
+                Concierge</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none hover-gold transition-smooth">Shipping &
+                Returns</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none hover-gold transition-smooth">Care Guide</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none hover-gold transition-smooth">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Newsletter & Social Media -->
+        <div class="col-12 col-md-6 col-lg-5">
+          <h6 class="font-heading text-uppercase gold-text mb-3" style="letter-spacing: 0.15em; font-size: 0.9rem;">
+            Newsletter</h6>
+          <p class="text-white-50 small mb-3">Subscribe to receive private invitations and seasonal lookbooks.</p>
+
+          <form class="js-newsletter-form mb-4">
+            <div class="input-group border-bottom border-secondary pb-1">
+              <input type="email"
+                class="form-control bg-transparent border-0 text-white shadow-none ps-0 rounded-0 fs-6"
+                placeholder="Enter your email" aria-label="Email address" required>
+              <button class="btn btn-link gold-text text-uppercase text-decoration-none p-0 fw-semibold" type="submit"
+                style="font-size: 0.75rem; letter-spacing: 0.15em;">Join</button>
+            </div>
+          </form>
+
+          <!-- Social Media Icons -->
+          <div class="d-flex align-items-center gap-3">
+            <span class="text-uppercase text-white-50 me-2" style="font-size: 0.7rem; letter-spacing: 0.15em;">Follow
+              Us:</span>
+            <a href="#" class="text-white-50 hover-gold transition-smooth fs-5" aria-label="Facebook"><i
+                class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white-50 hover-gold transition-smooth fs-5" aria-label="Instagram"><i
+                class="bi bi-instagram"></i></a>
+            <a href="#" class="text-white-50 hover-gold transition-smooth fs-5" aria-label="Twitter"><i
+                class="bi bi-twitter-x"></i></a>
+            <a href="#" class="text-white-50 hover-gold transition-smooth fs-5" aria-label="Pinterest"><i
+                class="bi bi-pinterest"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Divider -->
+      <hr class="border-secondary my-4">
+
+      <!-- Bottom Bar: Copyright & Back to Top -->
+      <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center gap-3 text-white-50"
+        style="font-size: 0.75rem; letter-spacing: 0.05em;">
+        <div>
+          &copy; 2026 AURA Maison. All Rights Reserved.
+        </div>
+
+        <!-- Back To Top Button -->
+        <a href="#"
+          class="text-white-50 text-decoration-none hover-gold d-inline-flex align-items-center gap-2 text-uppercase transition-smooth"
+          style="letter-spacing: 0.15em;">
+          Back To Top <i class="bi bi-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

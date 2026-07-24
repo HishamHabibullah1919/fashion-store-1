@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA | Concierge & Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- LUXURY HEADER / NAVIGATION -->
+    <header class="sticky-top bg-white border-bottom border-light shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-luxury py-3">
+            <div class="container d-flex align-items-center justify-content-between">
+
+                <!-- Brand Logo -->
+                <a class="navbar-brand font-heading text-uppercase fw-bold fs-2 text-dark tracking-wider me-0 me-lg-5"
+                    href="index.html">
+                    AURA<span class="gold-text">.</span>
+                </a>
+
+                <!-- Action Icons (Search & Cart) and Mobile Hamburger Toggle -->
+                <div class="d-flex align-items-center gap-3 order-lg-3 ms-auto ms-lg-0">
+
+                    <!-- Search Trigger -->
+                    <a href="#searchModal" class="nav-icon-link" data-bs-toggle="collapse" role="button"
+                        aria-expanded="false" aria-label="Search">
+                        <i class="bi bi-search"></i>
+                    </a>
+
+                    <!-- Cart Icon with Badge -->
+                    <a href="#" class="nav-icon-link position-relative" aria-label="Shopping Bag">
+                        <i class="bi bi-bag"></i>
+                        <span class="nav-icon-badge">2</span>
+                    </a>
+
+                    <!-- Mobile Hamburger Toggle -->
+                    <button class="navbar-toggler border-0 p-0 shadow-none ms-2" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarLuxury" aria-controls="navbarLuxury" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <i class="bi bi-list fs-1 text-dark"></i>
+                    </button>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="collapse navbar-collapse justify-content-center order-lg-2" id="navbarLuxury">
+                    <ul class="navbar-nav my-3 my-lg-0 gap-lg-4 text-uppercase">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- Products পেজে থাকার কারণে এখানে 'active gold-text' ব্যবহার করা হয়েছে -->
+                            <a class="nav-link" aria-current="page" href="products.html">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+        <!-- Collapsible Quick Search Bar -->
+        <div class="collapse bg-light border-top py-3" id="searchModal">
+            <div class="container">
+                <form class="d-flex align-items-center">
+                    <input type="search" class="form-control luxury-input border-0 bg-transparent me-2"
+                        placeholder="Search products, collections..." aria-label="Search">
+                    <button type="submit" class="btn btn-luxury btn-sm">Search</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT WRAPPER -->
+    <main>
+
+        <!-- CONTACT BANNER -->
+        <section class="py-5 bg-black text-white text-center position-relative">
+            <div class="container py-5">
+                <span class="sub-heading gold-text">Get In Touch</span>
+                <h1 class="display-4 text-uppercase font-heading mb-2">Contact Us</h1>
+                <p class="text-white-50 max-w-lg mx-auto mb-0" style="max-width: 550px; font-weight: 300;">
+                    Our private client advisors and concierges are available to assist you with inquiries, bespoke
+                    orders, or atelier appointments.
+                </p>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section class="py-5 my-4">
+            <div class="container py-3">
+
+                <!-- SUCCESS ALERT (Hidden by default, shown via JS) -->
+                <div id="contactSuccessAlert"
+                    class="alert alert-dark border-0 bg-black text-white rounded-0 shadow-lg p-4 mb-5 d-none align-items-center justify-content-between"
+                    role="alert">
+                    <div class="d-flex align-items-center gap-3">
+                        <i class="bi bi-check-circle-fill gold-text fs-2"></i>
+                        <div>
+                            <h4 class="h6 font-heading text-uppercase gold-text mb-1">Message Sent Successfully</h4>
+                            <p class="mb-0 text-white-50 small">Thank you for reaching out. A private concierge will
+                                review your message and respond shortly.</p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white" id="closeAlertBtn"
+                        aria-label="Close"></button>
+                </div>
+
+                <div class="row g-5">
+
+                    <!-- CONTACT INFORMATION & MAP -->
+                    <div class="col-lg-5">
+                        <div class="pe-lg-4">
+                            <span class="sub-heading">Atelier Details</span>
+                            <h2 class="section-title mb-4">Connect With Us</h2>
+                            <p class="text-muted fw-light mb-4" style="line-height: 1.8;">
+                                Whether you require tailored fit guidance, assistance with an order, or consultation for
+                                custom couture, our client concierge is at your service.
+                            </p>
+
+                            <!-- Info List -->
+                            <div class="d-flex flex-column gap-4 mb-5">
+
+                                <!-- Address -->
+                                <div class="d-flex align-items-start gap-3">
+                                    <div class="bg-light p-3 border d-flex align-items-center justify-content-center"
+                                        style="width: 50px; height: 50px; flex-shrink: 0;">
+                                        <i class="bi bi-geo-alt fs-5 text-dark"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="h6 font-heading text-uppercase mb-1">Flagship Atelier</h3>
+                                        <p class="text-muted small mb-0 fw-light">740 Madison Avenue, New York, NY 10065
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- Phone -->
+                                <div class="d-flex align-items-start gap-3">
+                                    <div class="bg-light p-3 border d-flex align-items-center justify-content-center"
+                                        style="width: 50px; height: 50px; flex-shrink: 0;">
+                                        <i class="bi bi-telephone fs-5 text-dark"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="h6 font-heading text-uppercase mb-1">Direct Line</h3>
+                                        <p class="text-muted small mb-0 fw-light">+1 (800) 555-2872 / +1 (212) 555-0199
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- Email -->
+                                <div class="d-flex align-items-start gap-3">
+                                    <div class="bg-light p-3 border d-flex align-items-center justify-content-center"
+                                        style="width: 50px; height: 50px; flex-shrink: 0;">
+                                        <i class="bi bi-envelope fs-5 text-dark"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="h6 font-heading text-uppercase mb-1">Electronic Mail</h3>
+                                        <p class="text-muted small mb-0 fw-light">concierge@auramaison.com</p>
+                                    </div>
+                                </div>
+
+                                <!-- Business Hours -->
+                                <div class="d-flex align-items-start gap-3">
+                                    <div class="bg-light p-3 border d-flex align-items-center justify-content-center"
+                                        style="width: 50px; height: 50px; flex-shrink: 0;">
+                                        <i class="bi bi-clock fs-5 text-dark"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="h6 font-heading text-uppercase mb-1">Business Hours</h3>
+                                        <p class="text-muted small mb-0 fw-light">Mon - Sat: 10:00 AM – 8:00 PM EST</p>
+                                        <p class="text-muted small mb-0 fw-light">Sunday: By Appointment Only</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- GOOGLE MAP PLACEHOLDER -->
+                            <div class="map-placeholder border bg-light position-relative overflow-hidden"
+                                style="height: 220px;">
+                                <iframe title="Google Map Placeholder"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.78281353272!2d-73.96870262341902!3d40.76675303425712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258eb2d1f692d%3A0xb35a3962d85601a4!2sMadison%20Ave%2C%20New%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+                                    width="100%" height="100%" style="border:0; filter: grayscale(100%) contrast(1.2);"
+                                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- CONTACT FORM -->
+                    <div class="col-lg-7">
+                        <div class="p-4 p-md-5 bg-white border shadow-sm">
+                            <h3 class="h4 font-heading text-uppercase mb-2">Send A Message</h3>
+                            <p class="text-muted small mb-4 fw-light">Please complete the form below. Required fields
+                                are marked with an asterisk (*).</p>
+
+                            <form id="contactForm" class="needs-validation" novalidate>
+                                <div class="row g-3">
+
+                                    <!-- Name -->
+                                    <div class="col-md-6">
+                                        <label for="contactName"
+                                            class="form-label text-uppercase fs-7 font-heading">Full Name *</label>
+                                        <input type="text" class="form-control rounded-0 p-3" id="contactName"
+                                            placeholder="e.g. Julian Vance" required>
+                                        <div class="invalid-feedback">Please enter your name.</div>
+                                    </div>
+
+                                    <!-- Email -->
+                                    <div class="col-md-6">
+                                        <label for="contactEmail"
+                                            class="form-label text-uppercase fs-7 font-heading">Email Address *</label>
+                                        <input type="email" class="form-control rounded-0 p-3" id="contactEmail"
+                                            placeholder="e.g. julian@example.com" required>
+                                        <div class="invalid-feedback">Please enter a valid email address.</div>
+                                    </div>
+
+                                    <!-- Phone -->
+                                    <div class="col-md-6">
+                                        <label for="contactPhone"
+                                            class="form-label text-uppercase fs-7 font-heading">Phone Number *</label>
+                                        <input type="tel" class="form-control rounded-0 p-3" id="contactPhone"
+                                            placeholder="e.g. +1 555 019 2831" required>
+                                        <div class="invalid-feedback">Please enter a valid phone number (at least 7
+                                            digits).</div>
+                                    </div>
+
+                                    <!-- Subject -->
+                                    <div class="col-md-6">
+                                        <label for="contactSubject"
+                                            class="form-label text-uppercase fs-7 font-heading">Subject *</label>
+                                        <input type="text" class="form-control rounded-0 p-3" id="contactSubject"
+                                            placeholder="e.g. Bespoke Fitting Inquiry" required>
+                                        <div class="invalid-feedback">Please enter a subject.</div>
+                                    </div>
+
+                                    <!-- Message -->
+                                    <div class="col-12">
+                                        <label for="contactMessage"
+                                            class="form-label text-uppercase fs-7 font-heading">Message *</label>
+                                        <textarea class="form-control rounded-0 p-3" id="contactMessage" rows="5"
+                                            placeholder="How may our concierge assist you today?" required></textarea>
+                                        <div class="invalid-feedback">Please write your message.</div>
+                                    </div>
+
+                                    <!-- Submit Button -->
+                                    <div class="col-12 pt-2">
+                                        <button type="submit"
+                                            class="btn btn-dark rounded-0 px-5 py-3 text-uppercase font-heading w-100 w-md-auto">
+                                            Transmit Message <i class="bi bi-arrow-right ms-2"></i>
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- LUXURY FOOTER -->
+    <footer class="bg-black text-white pt-5 pb-4 border-top border-secondary">
+        <div class="container pt-4">
+            <div class="row g-4 g-lg-5 mb-5">
+
+                <!-- Column 1: About Fashion Store -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <a href="index.html"
+                        class="font-heading text-uppercase text-white fw-bold fs-3 text-decoration-none d-inline-block mb-3"
+                        style="letter-spacing: 0.1em;">
+                        AURA<span class="gold-text">.</span>
+                    </a>
+                    <p class="text-white-50 small mb-4" style="line-height: 1.8; font-weight: 300;">
+                        A luxury maison dedicated to timeless elegance, uncompromising quality, and minimalist
+                        sophistication in high fashion.
+                    </p>
+                    <div class="d-flex align-items-center gap-2">
+                        <i class="bi bi-geo-alt gold-text"></i>
+                        <span class="text-white-50 small">740 Madison Ave, New York</span>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h6 class="font-heading text-uppercase gold-text mb-4"
+                        style="letter-spacing: 0.15em; font-size: 0.9rem;">Quick Links</h6>
+                    <ul class="list-unstyled mb-0 d-flex flex-column gap-2"
+                        style="font-size: 0.8rem; letter-spacing: 0.05em;">
+                        <li><a href="index.html"
+                                class="text-white-50 text-decoration-none hover-gold transition-smooth">Home</a></li>
+                        <li><a href="products.html"
+                                class="text-white-50 text-decoration-none hover-gold transition-smooth">Collections</a>
+                        </li>
+                        <li><a href="about.html"
+                                class="text-white-50 text-decoration-none hover-gold transition-smooth">The Maison</a>
+                        </li>
+                        <li><a href="contact.html"
+                                class="text-white-50 text-decoration-none hover-gold transition-smooth">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Customer Service -->
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h6 class="font-heading text-uppercase gold-text mb-4"
+                        style="letter-spacing: 0.15em; font-size: 0.9rem;">Client Care</h6>
+                    <ul class="list-unstyled mb-0 d-flex flex-column gap-2"
+                        style="font-size: 0.8rem; letter-spacing: 0.05em;">
+                        <li><a href="#" class="text-white-50 text-decoration-none hover-gold transition-smooth">Bespoke
+                                Concierge</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none hover-gold transition-smooth">Shipping
+                                & Returns</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none hover-gold transition-smooth">Care
+                                Guide</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none hover-gold transition-smooth">Privacy
+                                Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Newsletter & Social Media -->
+                <div class="col-12 col-md-6 col-lg-5">
+                    <h6 class="font-heading text-uppercase gold-text mb-3"
+                        style="letter-spacing: 0.15em; font-size: 0.9rem;">Newsletter</h6>
+                    <p class="text-white-50 small mb-3">Subscribe to receive private invitations and seasonal lookbooks.
+                    </p>
+
+                    <form class="js-newsletter-form mb-4">
+                        <div class="input-group border-bottom border-secondary pb-1">
+                            <input type="email"
+                                class="form-control bg-transparent border-0 text-white shadow-none ps-0 rounded-0 fs-6"
+                                placeholder="Enter your email" aria-label="Email address" required>
+                            <button class="btn btn-link gold-text text-uppercase text-decoration-none p-0 fw-semibold"
+                                type="submit" style="font-size: 0.75rem; letter-spacing: 0.15em;">Join</button>
+                        </div>
+                    </form>
+
+                    <!-- Social Media Icons -->
+                    <div class="d-flex align-items-center gap-3">
+                        <span class="text-uppercase text-white-50 me-2"
+                            style="font-size: 0.7rem; letter-spacing: 0.15em;">Follow Us:</span>
+                        <a href="#" class="text-white-50 hover-gold transition-smooth fs-5" aria-label="Facebook"><i
+                                class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white-50 hover-gold transition-smooth fs-5" aria-label="Instagram"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white-50 hover-gold transition-smooth fs-5" aria-label="Twitter"><i
+                                class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="text-white-50 hover-gold transition-smooth fs-5" aria-label="Pinterest"><i
+                                class="bi bi-pinterest"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Divider -->
+            <hr class="border-secondary my-4">
+
+            <!-- Bottom Bar: Copyright & Back to Top -->
+            <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center gap-3 text-white-50"
+                style="font-size: 0.75rem; letter-spacing: 0.05em;">
+                <div>
+                    &copy; 2026 AURA Maison. All Rights Reserved.
+                </div>
+
+                <!-- Back To Top Button -->
+                <a href="#"
+                    class="text-white-50 text-decoration-none hover-gold d-inline-flex align-items-center gap-2 text-uppercase transition-smooth"
+                    style="letter-spacing: 0.15em;">
+                    Back To Top <i class="bi bi-arrow-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+
+</html>

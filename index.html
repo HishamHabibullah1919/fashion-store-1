@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA | Haute Couture & High Fashion</title>
+
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+    <!-- LUXURY HEADER / NAVIGATION -->
+    <header class="sticky-top bg-white border-bottom border-light shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-luxury py-3">
+            <div class="container d-flex align-items-center justify-content-between">
+
+                <!-- Brand Logo -->
+                <a class="navbar-brand font-heading text-uppercase fw-bold fs-2 text-dark tracking-wider me-0 me-lg-5"
+                    href="index.html">
+                    AURA<span class="gold-text">.</span>
+                </a>
+
+                <!-- Action Icons (Search & Cart) and Mobile Hamburger Toggle -->
+                <div class="d-flex align-items-center gap-3 order-lg-3 ms-auto ms-lg-0">
+
+                    <!-- Search Trigger -->
+                    <a href="#searchModal" class="nav-icon-link" data-bs-toggle="collapse" role="button"
+                        aria-expanded="false" aria-label="Search">
+                        <i class="bi bi-search"></i>
+                    </a>
+
+                    <!-- Cart Icon with Badge -->
+                    <a href="#" class="nav-icon-link position-relative" aria-label="Shopping Bag">
+                        <i class="bi bi-bag"></i>
+                        <span class="nav-icon-badge">2</span>
+                    </a>
+
+                    <!-- Mobile Hamburger Toggle -->
+                    <button class="navbar-toggler border-0 p-0 shadow-none ms-2" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarLuxury" aria-controls="navbarLuxury" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <i class="bi bi-list fs-1 text-dark"></i>
+                    </button>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="collapse navbar-collapse justify-content-center order-lg-2" id="navbarLuxury">
+                    <ul class="navbar-nav my-3 my-lg-0 gap-lg-4 text-uppercase">
+                        <li class="nav-item">
+                            <a class="nav-link active gold-text" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- Products পেজে থাকার কারণে এখানে 'active gold-text' ব্যবহার করা হয়েছে -->
+                            <a class="nav-link" aria-current="page" href="products.html">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+        <!-- Collapsible Quick Search Bar -->
+        <div class="collapse bg-light border-top py-3" id="searchModal">
+            <div class="container">
+                <form class="d-flex align-items-center">
+                    <input type="search" class="form-control luxury-input border-0 bg-transparent me-2"
+                        placeholder="Search products, collections..." aria-label="Search">
+                    <button type="submit" class="btn btn-luxury btn-sm">Search</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- MAIN CONTENT WRAPPER -->
+    <main>
+
+        <!-- 1. HERO BANNER -->
+        <section class="hero-section position-relative overflow-hidden mb-5">
+            <div class="container">
+                <div class="row align-items-center min-vh-75 py-5">
+                    <div class="col-lg-7 text-white">
+                        <span class="sub-heading gold-text text-uppercase mb-2 d-block"
+                            style="letter-spacing: 0.25em; font-weight: 600;">Automne / Hiver 2026</span>
+                        <h1 class="display-2 font-heading text-uppercase mb-4 fw-normal"
+                            style="letter-spacing: 0.05em; line-height: 1.1;">
+                            Sovereign <br><span class="gold-text">Elegance</span>
+                        </h1>
+                        <p class="lead text-white-50 mb-4 fw-light"
+                            style="max-width: 520px; font-size: 1rem; line-height: 1.8;">
+                            Discover an haute couture collection shaped by structural minimalism, noble textiles, and
+                            uncompromising Italian craftsmanship.
+                        </p>
+                        <div class="d-flex flex-wrap gap-3">
+                            <a href="products.html" class="btn btn-gold text-uppercase">Shop Collection</a>
+                            <a href="about.html"
+                                class="btn btn-luxury-outline text-white border-white text-uppercase">Explore Maison</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. CATEGORIES SECTION -->
+        <section class="py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="sub-heading">Curated Lines</span>
+                    <h2 class="section-title">Explore Categories</h2>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Category: Men -->
+                    <div class="col-6 col-lg-3">
+                        <div class="collection-card position-relative overflow-hidden rounded-0 shadow-sm"
+                            style="height: 380px;">
+                            <img src="https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?q=80&w=800&auto=format&fit=crop"
+                                class="w-100 h-100 object-fit-cover transition-smooth" alt="Men's Collection">
+                            <div
+                                class="collection-overlay p-4 d-flex flex-column justify-content-end position-absolute inset-0">
+                                <span class="sub-heading gold-text" style="font-size: 0.7rem;">Maison</span>
+                                <h3 class="h4 font-heading text-white text-uppercase mb-2">Men</h3>
+                                <a href="products.html?cat=men"
+                                    class="btn btn-luxury-outline text-white border-white btn-sm align-self-start text-uppercase"
+                                    style="font-size: 0.7rem;">Discover</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category: Women -->
+                    <div class="col-6 col-lg-3">
+                        <div class="collection-card position-relative overflow-hidden rounded-0 shadow-sm"
+                            style="height: 380px;">
+                            <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop"
+                                class="w-100 h-100 object-fit-cover transition-smooth" alt="Women's Collection">
+                            <div
+                                class="collection-overlay p-4 d-flex flex-column justify-content-end position-absolute inset-0">
+                                <span class="sub-heading gold-text" style="font-size: 0.7rem;">Maison</span>
+                                <h3 class="h4 font-heading text-white text-uppercase mb-2">Women</h3>
+                                <a href="products.html?cat=women"
+                                    class="btn btn-luxury-outline text-white border-white btn-sm align-self-start text-uppercase"
+                                    style="font-size: 0.7rem;">Discover</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category: Kids -->
+                    <div class="col-6 col-lg-3">
+                        <div class="collection-card position-relative overflow-hidden rounded-0 shadow-sm"
+                            style="height: 380px;">
+                            <img src="https://images.unsplash.com/photo-1518831959646-742c3a14ebf7?q=80&w=800&auto=format&fit=crop"
+                                class="w-100 h-100 object-fit-cover transition-smooth" alt="Kids Collection">
+                            <div
+                                class="collection-overlay p-4 d-flex flex-column justify-content-end position-absolute inset-0">
+                                <span class="sub-heading gold-text" style="font-size: 0.7rem;">Junior</span>
+                                <h3 class="h4 font-heading text-white text-uppercase mb-2">Kids</h3>
+                                <a href="products.html?cat=kids"
+                                    class="btn btn-luxury-outline text-white border-white btn-sm align-self-start text-uppercase"
+                                    style="font-size: 0.7rem;">Discover</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category: Accessories -->
+                    <div class="col-6 col-lg-3">
+                        <div class="collection-card position-relative overflow-hidden rounded-0 shadow-sm"
+                            style="height: 380px;">
+                            <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=800&auto=format&fit=crop"
+                                class="w-100 h-100 object-fit-cover transition-smooth" alt="Accessories Collection">
+                            <div
+                                class="collection-overlay p-4 d-flex flex-column justify-content-end position-absolute inset-0">
+                                <span class="sub-heading gold-text" style="font-size: 0.7rem;">Atelier</span>
+                                <h3 class="h4 font-heading text-white text-uppercase mb-2">Accessories</h3>
+                                <a href="products.html?cat=accessories"
+                                    class="btn btn-luxury-outline text-white border-white btn-sm align-self-start text-uppercase"
+                                    style="font-size: 0.7rem;">Discover</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. FEATURED PRODUCTS (8 Cards) -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-5">
+                    <div>
+                        <span class="sub-heading">Selected Creations</span>
+                        <h2 class="section-title mb-0">Featured Products</h2>
+                    </div>
+                    <a href="products.html" class="btn btn-luxury-outline mt-3 mt-md-0 text-uppercase">View Full
+                        Catalogue</a>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Card 1 -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card product-card border-0 rounded-0 h-100 bg-white">
+                            <div class="product-img-wrapper position-relative overflow-hidden">
+                                <span class="product-badge">New Arrival</span>
+                                <img src="https://images.unsplash.com/photo-1544441893-675973e31985?q=80&w=800&auto=format&fit=crop"
+                                    class="card-img-top rounded-0" alt="Silk Trench Coat">
+                                <div class="product-actions">
+                                    <button class="btn btn-luxury btn-sm w-100 js-open-cart-modal"
+                                        data-product="Silk Trench Coat">
+                                        <i class="bi bi-bag me-1"></i> Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card-body product-info text-center p-3">
+                                <div class="product-category">Outerwear</div>
+                                <h3 class="product-title card-title fs-6 fw-normal mb-1">Silk Trench Coat</h3>
+                                <div class="product-price fw-semibold">$1,250</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card product-card border-0 rounded-0 h-100 bg-white">
+                            <div class="product-img-wrapper position-relative overflow-hidden">
+                                <span class="product-badge">Best Seller</span>
+                                <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?q=80&w=800&auto=format&fit=crop"
+                                    class="card-img-top rounded-0" alt="Tailored Velvet Blazer">
+                                <div class="product-actions">
+                                    <button class="btn btn-luxury btn-sm w-100 js-open-cart-modal"
+                                        data-product="Tailored Velvet Blazer">
+                                        <i class="bi bi-bag me-1"></i> Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card-body product-info text-center p-3">
+                                <div class="product-category">Tailoring</div>
+                                <h3 class="product-title card-title fs-6 fw-normal mb-1">Tailored Velvet Blazer</h3>
+                                <div class="product-price fw-semibold">$890</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card product-card border-0 rounded-0 h-100 bg-white">
+                            <div class="product-img-wrapper position-relative overflow-hidden">
+                                <span class="product-badge">Limited</span>
+                                <img src="https://images.unsplash.com/photo-1566174053879-31528523f8ae?q=80&w=800&auto=format&fit=crop"
+                                    class="card-img-top rounded-0" alt="Pleated Evening Gown">
+                                <div class="product-actions">
+                                    <button class="btn btn-luxury btn-sm w-100 js-open-cart-modal"
+                                        data-product="Pleated Evening Gown">
+                                        <i class="bi bi-bag me-1"></i> Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card-body product-info text-center p-3">
+                                <div class="product-category">Dresses</div>
+                                <h3 class="product-title card-title fs-6 fw-normal mb-1">Pleated Evening Gown</h3>
+                                <div class="product-price fw-semibold">$1,450</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card product-card border-0 rounded-0 h-100 bg-white">
+                            <div class="product-img-wrapper position-relative overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=800&auto=format&fit=crop"
+                                    class="card-img-top rounded-0" alt="Leather Crossbody Bag">
+                                <div class="product-actions">
+                                    <button class="btn btn-luxury btn-sm w-100 js-open-cart-modal"
+                                        data-product="Leather Crossbody Bag">
+                                        <i class="bi bi-bag me-1"></i> Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card-body product-info text-center p-3">
+                                <div class="product-category">Leather Goods</div>
+                                <h3 class="product-title card-title fs-6 fw-normal mb-1">Leather Crossbody Bag</h3>
+                                <div class="product-price fw-semibold">$620</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card product-card border-0 rounded-0 h-100 bg-white">
+                            <div class="product-img-wrapper position-relative overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1576995853123-5a10305d93c0?q=80&w=800&auto=format&fit=crop"
+                                    class="card-img-top rounded-0" alt="Cashmere Ribbed Knit">
+                                <div class="product-actions">
+                                    <button class="btn btn-luxury btn-sm w-100 js-open-cart-modal"
+                                        data-product="Cashmere Ribbed Knit">
+                                        <i class="bi bi-bag me-1"></i> Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card-body product-info text-center p-3">
+                                <div class="product-category">Knitwear</div>
+                                <h3 class="product-title card-title fs-6 fw-normal mb-1">Cashmere Ribbed Knit</h3>
+                                <div class="product-price fw-semibold">$480</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card product-card border-0 rounded-0 h-100 bg-white">
+                            <div class="product-img-wrapper position-relative overflow-hidden">
+                                <span class="product-badge">Essential</span>
+                                <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?q=80&w=800&auto=format&fit=crop"
+                                    class="card-img-top rounded-0" alt="Satin Slip Dress">
+                                <div class="product-actions">
+                                    <button class="btn btn-luxury btn-sm w-100 js-open-cart-modal"
+                                        data-product="Satin Slip Dress">
+                                        <i class="bi bi-bag me-1"></i> Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card-body product-info text-center p-3">
+                                <div class="product-category">Dresses</div>
+                                <h3 class="product-title card-title fs-6 fw-normal mb-1">Satin Slip Dress</h3>
+                                <div class="product-price fw-semibold">$730</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 7 -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card product-card border-0 rounded-0 h-100 bg-white">
+                            <div class="product-img-wrapper position-relative overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=80&w=800&auto=format&fit=crop"
+                                    class="card-img-top rounded-0" alt="Structured Wool Overcoat">
+                                <div class="product-actions">
+                                    <button class="btn btn-luxury btn-sm w-100 js-open-cart-modal"
+                                        data-product="Structured Wool Overcoat">
+                                        <i class="bi bi-bag me-1"></i> Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card-body product-info text-center p-3">
+                                <div class="product-category">Outerwear</div>
+                                <h3 class="product-title card-title fs-6 fw-normal mb-1">Structured Wool Overcoat</h3>
+                                <div class="product-price fw-semibold">$1,680</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 8 -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card product-card border-0 rounded-0 h-100 bg-white">
+                            <div class="product-img-wrapper position-relative overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1523206489230-c012c64b2b48?q=80&w=800&auto=format&fit=crop"
+                                    class="card-img-top rounded-0" alt="Minimalist Leather Watch">
+                                <div class="product-actions">
+                                    <button class="btn btn-luxury btn-sm w-100 js-open-cart-modal"
+                                        data-product="Minimalist Leather Watch">
+                                        <i class="bi bi-bag me-1"></i> Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card-body product-info text-center p-3">
+                                <div class="product-category">Horology</div>
+                                <h3 class="product-title card-title fs-6 fw-normal mb-1">Minimalist Leather Watch</h3>
+                                <div class="product-price fw-semibold">$950</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. FASHION GALLERY (Hover Zoom Grid) -->
+        <section class="py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="sub-heading">Visual Journal</span>
+                    <h2 class="section-title">The Runway Gallery</h2>
+                </div>
+
+                <div class="row g-3">
+                    <div class="col-12 col-md-4">
+                        <div class="gallery-item overflow-hidden position-relative shadow-sm" style="height: 420px;">
+                            <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?q=80&w=800&auto=format&fit=crop"
+                                class="w-100 h-100 object-fit-cover gallery-img transition-smooth"
+                                alt="Runway Portrait 1">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <div class="gallery-item overflow-hidden position-relative shadow-sm" style="height: 420px;">
+                            <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=800&auto=format&fit=crop"
+                                class="w-100 h-100 object-fit-cover gallery-img transition-smooth"
+                                alt="Runway Portrait 2">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <div class="gallery-item overflow-hidden position-relative shadow-sm" style="height: 420px;">
+                            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800&auto=format&fit=crop"
+                                class="w-100 h-100 object-fit-cover gallery-img transition-smooth"
+                                alt="Runway Portrait 3">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-6">
+                        <div class="gallery-item overflow-hidden position-relative shadow-sm" style="height: 380px;">
+                            <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=1200&auto=format&fit=crop"
+                                class="w-100 h-100 object-fit-cover gallery-img transition-smooth"
+                                alt="Atelier Interior">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-6">
+                        <div class="gallery-item overflow-hidden position-relative shadow-sm" style="height: 380px;">
+                            <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=1200&auto=format&fit=crop"
+                                class="w-100 h-100 object-fit-cover gallery-img transition-smooth"
+                                alt="High Fashion Details">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. WHY CHOOSE US -->
+        <section class="py-5 bg-black text-white border-top border-bottom border-secondary">
+            <div class="container py-4">
+                <div class="row g-4 text-center">
+                    <!-- Quality -->
+                    <div class="col-6 col-md-3">
+                        <div class="p-3">
+                            <i class="bi bi-gem gold-text display-5 mb-3 d-block"></i>
+                            <h3 class="h6 font-heading text-uppercase gold-text mb-2" style="letter-spacing: 0.15em;">
+                                Artisanal Quality</h3>
+                            <p class="text-white-50 small mb-0 fw-light">Handcrafted in Italy using 100% organic,
+                                ethically sourced materials.</p>
+                        </div>
+                    </div>
+                    <!-- Fast Delivery -->
+                    <div class="col-6 col-md-3">
+                        <div class="p-3">
+                            <i class="bi bi-box-seam gold-text display-5 mb-3 d-block"></i>
+                            <h3 class="h6 font-heading text-uppercase gold-text mb-2" style="letter-spacing: 0.15em;">
+                                Express Global Delivery</h3>
+                            <p class="text-white-50 small mb-0 fw-light">Complimentary insured worldwide shipping on all
+                                orders over $500.</p>
+                        </div>
+                    </div>
+                    <!-- Easy Return -->
+                    <div class="col-6 col-md-3">
+                        <div class="p-3">
+                            <i class="bi bi-arrow-counterclockwise gold-text display-5 mb-3 d-block"></i>
+                            <h3 class="h6 font-heading text-uppercase gold-text mb-2" style="letter-spacing: 0.15em;">
+                                Seamless Returns</h3>
+                            <p class="text-white-50 small mb-0 fw-light">30-day effortless return policy with concierge
+                                home pick-up.</p>
+                        </div>
+                    </div>
+                    <!-- Secure Payment -->
+                    <div class="col-6 col-md-3">
+                        <div class="p-3">
+                            <i class="bi bi-shield-lock gold-text display-5 mb-3 d-block"></i>
+                            <h3 class="h6 font-heading text-uppercase gold-text mb-2" style="letter-spacing: 0.15em;">
+                                Encrypted Checkout</h3>
+                            <p class="text-white-50 small mb-0 fw-light">Bank-grade 256-bit SSL encryption for ultimate
+                                transactional safety.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. FAQ ACCORDION -->
+        <section class="py-5 my-4">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="text-center mb-5">
+                            <span class="sub-heading">Assistance</span>
+                            <h2 class="section-title">Frequently Asked Questions</h2>
+                        </div>
+
+                        <div class="accordion accordion-flush custom-luxury-accordion" id="luxuryFaqAccordion">
+                            <!-- Question 1 -->
+                            <div class="accordion-item border-bottom border-light">
+                                <h3 class="accordion-header" id="headingOne">
+                                    <button
+                                        class="accordion-button collapsed font-heading text-uppercase fs-6 py-4 shadow-none"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                        aria-expanded="false" aria-controls="collapseOne">
+                                        How are AURA garments manufactured?
+                                    </button>
+                                </h3>
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                    data-bs-parent="#luxuryFaqAccordion">
+                                    <div class="accordion-body text-muted fw-light pb-4 fs-6">
+                                        Every AURA piece is designed in our Paris studio and handcrafted by master
+                                        artisans in Florence and Milan. We exclusively source OEKO-TEX certified silks,
+                                        organic cashmere, and ethically tanned leathers.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Question 2 -->
+                            <div class="accordion-item border-bottom border-light">
+                                <h3 class="accordion-header" id="headingTwo">
+                                    <button
+                                        class="accordion-button collapsed font-heading text-uppercase fs-6 py-4 shadow-none"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                        aria-expanded="false" aria-controls="collapseTwo">
+                                        What are your global delivery timelines?
+                                    </button>
+                                </h3>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#luxuryFaqAccordion">
+                                    <div class="accordion-body text-muted fw-light pb-4 fs-6">
+                                        Express international orders are delivered within 2 to 4 business days. Priority
+                                        domestic orders arrive within 24 to 48 hours. All shipments are fully insured
+                                        and require a physical signature upon delivery.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Question 3 -->
+                            <div class="accordion-item border-bottom border-light">
+                                <h3 class="accordion-header" id="headingThree">
+                                    <button
+                                        class="accordion-button collapsed font-heading text-uppercase fs-6 py-4 shadow-none"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                        aria-expanded="false" aria-controls="collapseThree">
+                                        What is your return and exchange policy?
+                                    </button>
+                                </h3>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#luxuryFaqAccordion">
+                                    <div class="accordion-body text-muted fw-light pb-4 fs-6">
+                                        We offer a complimentary 30-day return window. Items must remain unworn,
+                                        unaltered, and with all original security tags attached. You may arrange a
+                                        complimentary private courier pick-up through your client account.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Question 4 -->
+                            <div class="accordion-item border-bottom border-light">
+                                <h3 class="accordion-header" id="headingFour">
+                                    <button
+                                        class="accordion-button collapsed font-heading text-uppercase fs-6 py-4 shadow-none"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                        aria-expanded="false" aria-controls="collapseFour">
+                                        Do you offer bespoke tailoring or custom sizing?
+                                    </button>
+                                </h3>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                    data-bs-parent="#luxuryFaqAccordion">
+                                    <div class="accordion-body text-muted fw-light pb-4 fs-6">
+                                        Yes. Our Made-to-Measure concierge service is available both at our flagship
+                                        Madison Avenue atelier and through private digital consultations. Please reach
+                                        out via our contact portal to schedule an appointment.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Question 5 -->
+                            <div class="accordion-item border-bottom border-light">
+                                <h3 class="accordion-header" id="headingFive">
+                                    <button
+                                        class="accordion-button collapsed font-heading text-uppercase fs-6 py-4 shadow-none"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                        aria-expanded="false" aria-controls="collapseFive">
+                                        How can I verify the authenticity of my product?
+                                    </button>
+                                </h3>
+                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                    data-bs-parent="#luxuryFaqAccordion">
+                                    <div class="accordion-body text-muted fw-light pb-4 fs-6">
+                                        Every authentic AURA garment features an embedded NFC cryptographic tag near the
+                                        care label. Scanning it with any mobile device reveals its unique digital
+                                        certificate of authenticity and production origin.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. REAL-TIME DATE & TIME DISPLAY BAR -->
+        <section class="py-3 bg-light border-top border-bottom text-center">
+            <div class="container">
+                <div class="d-inline-flex align-items-center gap-2 text-uppercase"
+                    style="font-size: 0.75rem; letter-spacing: 0.15em;">
+                    <i class="bi bi-clock gold-text fs-6"></i>
+                    <span class="text-muted fw-medium">Live Maison Time:</span>
+                    <span id="liveDateTimeDisplay" class="fw-bold text-dark">Loading...</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 8. BOOTSTRAP SUCCESS MODAL (Triggered when clicking Add To Cart) -->
+    <div class="modal fade" id="addToCartSuccessModal" tabindex="-1" aria-labelledby="addToCartSuccessModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-content rounded-0 border-0 bg-black text-white p-3 text-center shadow-lg">
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <i class="bi bi-check-circle-fill gold-text display-4"></i>
+                    </div>
+                    <h4 class="h5 font-heading text-uppercase gold-text mb-2" id="addToCartSuccessModalLabel">Added To
+                        Cart</h4>
+                    <p class="text-white-50 small mb-1" id="modalProductName">Selected Item</p>
+                    <p class="text-white-50 small mb-4" style="font-size: 0.75rem;">Product Added Successfully to your
+                        luxury shopping bag.</p>
+                    <button type="button" class="btn btn-gold btn-sm w-100 text-uppercase"
+                        data-bs-dismiss="modal">Continue Shopping</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- LUXURY FOOTER -->
+    <footer class="bg-black text-white pt-5 pb-4 border-top border-secondary">
+        <div class="container pt-4">
+            <div class="row g-4 g-lg-5 mb-5">
+
+                <!-- Column 1: About Fashion Store -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <a href="index.html"
+                        class="font-heading text-uppercase text-white fw-bold fs-3 text-decoration-none d-inline-block mb-3"
+                        style="letter-spacing: 0.1em;">
+                        AURA<span class="gold-text">.</span>
+                    </a>
+                    <p class="text-white-50 small mb-4" style="line-height: 1.8; font-weight: 300;">
+                        A luxury maison dedicated to timeless elegance, uncompromising quality, and minimalist
+                        sophistication in high fashion.
+                    </p>
+                    <div class="d-flex align-items-center gap-2">
+                        <i class="bi bi-geo-alt gold-text"></i>
+                        <span class="text-white-50 small">740 Madison Ave, New York</span>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h6 class="font-heading text-uppercase gold-text mb-4"
+                        style="letter-spacing: 0.15em; font-size: 0.9rem;">Quick Links</h6>
+                    <ul class="list-unstyled mb-0 d-flex flex-column gap-2"
+                        style="font-size: 0.8rem; letter-spacing: 0.05em;">
+                        <li><a href="index.html"
+                                class="text-white-50 text-decoration-none hover-gold transition-smooth">Home</a></li>
+                        <li><a href="products.html"
+                                class="text-white-50 text-decoration-none hover-gold transition-smooth">Collections</a>
+                        </li>
+                        <li><a href="about.html"
+                                class="text-white-50 text-decoration-none hover-gold transition-smooth">The Maison</a>
+                        </li>
+                        <li><a href="contact.html"
+                                class="text-white-50 text-decoration-none hover-gold transition-smooth">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Customer Service -->
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h6 class="font-heading text-uppercase gold-text mb-4"
+                        style="letter-spacing: 0.15em; font-size: 0.9rem;">Client Care</h6>
+                    <ul class="list-unstyled mb-0 d-flex flex-column gap-2"
+                        style="font-size: 0.8rem; letter-spacing: 0.05em;">
+                        <li><a href="#" class="text-white-50 text-decoration-none hover-gold transition-smooth">Bespoke
+                                Concierge</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none hover-gold transition-smooth">Shipping
+                                & Returns</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none hover-gold transition-smooth">Care
+                                Guide</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none hover-gold transition-smooth">Privacy
+                                Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Newsletter & Social Media -->
+                <div class="col-12 col-md-6 col-lg-5">
+                    <h6 class="font-heading text-uppercase gold-text mb-3"
+                        style="letter-spacing: 0.15em; font-size: 0.9rem;">Newsletter</h6>
+                    <p class="text-white-50 small mb-3">Subscribe to receive private invitations and seasonal lookbooks.
+                    </p>
+
+                    <form class="js-newsletter-form mb-4">
+                        <div class="input-group border-bottom border-secondary pb-1">
+                            <input type="email"
+                                class="form-control bg-transparent border-0 text-white shadow-none ps-0 rounded-0 fs-6"
+                                placeholder="Enter your email" aria-label="Email address" required>
+                            <button class="btn btn-link gold-text text-uppercase text-decoration-none p-0 fw-semibold"
+                                type="submit" style="font-size: 0.75rem; letter-spacing: 0.15em;">Join</button>
+                        </div>
+                    </form>
+
+                    <!-- Social Media Icons -->
+                    <div class="d-flex align-items-center gap-3">
+                        <span class="text-uppercase text-white-50 me-2"
+                            style="font-size: 0.7rem; letter-spacing: 0.15em;">Follow Us:</span>
+                        <a href="#" class="text-white-50 hover-gold transition-smooth fs-5" aria-label="Facebook"><i
+                                class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white-50 hover-gold transition-smooth fs-5" aria-label="Instagram"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white-50 hover-gold transition-smooth fs-5" aria-label="Twitter"><i
+                                class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="text-white-50 hover-gold transition-smooth fs-5" aria-label="Pinterest"><i
+                                class="bi bi-pinterest"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Divider -->
+            <hr class="border-secondary my-4">
+
+            <!-- Bottom Bar: Copyright & Back to Top -->
+            <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center gap-3 text-white-50"
+                style="font-size: 0.75rem; letter-spacing: 0.05em;">
+                <div>
+                    &copy; 2026 AURA Maison. All Rights Reserved.
+                </div>
+
+                <!-- Back To Top Button -->
+                <a href="#"
+                    class="text-white-50 text-decoration-none hover-gold d-inline-flex align-items-center gap-2 text-uppercase transition-smooth"
+                    style="letter-spacing: 0.15em;">
+                    Back To Top <i class="bi bi-arrow-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

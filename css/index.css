@@ -1,0 +1,37 @@
+.hero-section {
+  background:
+    url("https://static.vecteezy.com/system/resources/thumbnails/047/981/061/small/happy-man-with-backpack-and-headphones-holding-laptop-and-smiling-showing-thumb-up-in-approval-standing-over-turquoise-background-photo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+}
+
+/* Gallery Hover Effect */
+.gallery-img {
+  transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.gallery-item:hover .gallery-img {
+  transform: scale(1.08);
+}
+
+/* Custom Accordion Luxury Styling */
+.custom-luxury-accordion .accordion-button {
+  background: transparent;
+  color: var(--color-black);
+}
+
+.custom-luxury-accordion .accordion-button:not(.collapsed) {
+  background: transparent;
+  color: var(--color-gold);
+  box-shadow: none;
+}
+
+.custom-luxury-accordion .accordion-button::after {
+  filter: grayscale(100%);
+}
+
+.custom-luxury-accordion .accordion-button:not(.collapsed)::after {
+  filter: none;
+}

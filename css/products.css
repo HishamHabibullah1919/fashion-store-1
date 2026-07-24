@@ -1,0 +1,4 @@
+
+  .product-item {
+    transition: opacity 0.4s ease, transform 0.4s ease;
+  }
